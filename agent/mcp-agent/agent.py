@@ -48,6 +48,10 @@ DEFAULT_MCP_CONFIG: MCPConfig = {
         "args": [os.path.join(os.path.dirname(__file__), "..", "math_server.py")],
         "transport": "stdio",
     },
+        "metricool": {
+        "url": "https://metricool-mcp-1.onrender.com/sse",
+        "transport": "sse",
+    },
 }
 
 # Define a custom ReAct prompt that encourages the use of multiple tools
